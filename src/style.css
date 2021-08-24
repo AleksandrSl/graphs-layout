@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+#algorithm-name {
+    text-align: center;
+}
+
+#buttons {
+    position: fixed;
+    left: 16px;
+    display: flex;
+}
+
+#cy {
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    left: 0;
+}
