@@ -1,5 +1,4 @@
 import './style.css'
-import {data} from "./data";
 import cytoscape from "cytoscape";
 import {bfsOptions} from "./layout-settings/bfs";
 import {cose} from "./layout-settings/cose";
@@ -21,10 +20,22 @@ cytoscape.use(klay);
 cytoscape.use(cola);
 cytoscape.use(dagre)
 
+const layouts = {
+    bfs: bfsOptions,
+    cose: cose,
+    klay: klayOptions,
+    fcose: fcoseOptions,
+    cola: colaOptions,
+    dagre: dagreOptions,
+}
+
 const app = document.querySelector<HTMLDivElement>('#app')!
 
 app.innerHTML = `
-<div id="buttons"></div>
+<div class="toolbar">
+  <div id="buttons"></div>
+  <input id='upload-file' type="file">
+</div>
 <h2 id="algorithm-name">default</h2>
 <div id='cy'></div>
 `
@@ -50,14 +61,9 @@ function mapGroup(v: any) {
     }
 }
 
-
 let cy = cytoscape({
     container: document.getElementById('cy'),
-    elements: [
-        ...data.groups.map(mapGroup),
-        ...data.nodes.map(mapNode),
-        ...data.connections.map(mapConnection),
-    ],
+    elements: [],
     style: [
         {
             selector: 'node',
@@ -74,18 +80,24 @@ let cy = cytoscape({
                 'curve-style': "bezier",
                 'target-arrow-shape': 'triangle'
             }
-        }
-    ]
+        },
+    ],
 })
 
 
-const layouts = {
-    bfs: bfsOptions,
-    cose: cose,
-    klay: klayOptions,
-    fcose: fcoseOptions,
-    cola: colaOptions,
-    dagre: dagreOptions,
+function draw(cy: cytoscape.Core, data: { groups: any[], nodes: any[], connections: any[]}) {
+    cy.elements().remove();
+    cy.add([
+        ...data.groups.map(mapGroup),
+        ...data.nodes.map(mapNode),
+        ...data.connections.map(mapConnection),
+    ])
+    setLayout('bfs')
+}
+
+function setLayout(name: keyof typeof layouts) {
+    document.querySelector('#algorithm-name')!.textContent = name
+    cy.layout(layouts[name]).run()
 }
 
 // @ts-ignore
@@ -94,13 +106,28 @@ cy.viewport({
 });
 
 const container = document.getElementById("buttons")!
-Object.entries(layouts).forEach(([name, layout]) => {
+Object.keys(layouts).forEach((name) => {
     const button = document.createElement("button")
     button.innerText = name
     button.addEventListener("click", () => {
-        document.querySelector('#algorithm-name')!.textContent = name
-        cy.layout(layout).run()
+        setLayout(name as keyof typeof layouts)
     })
     container.append(button)
 })
 
+const uploadFileInput = document.querySelector('#upload-file')! as HTMLInputElement
+uploadFileInput.addEventListener("change", (event) => {
+    // @ts-ignore
+    const file = event.target.files[0]
+    const reader = new FileReader();
+    reader.readAsText(file);
+
+    reader.onload = function() {
+        const data = JSON.parse(reader.result as string)
+        draw(cy, data)
+    };
+
+    reader.onerror = function() {
+        console.log(reader.error);
+    };
+})
