@@ -23,14 +23,17 @@ body {
     position: fixed;
     left: 8px;
     top: 8px;
-    padding: 4px;
+    padding: 16px;
     border-radius: 4px;
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .1), 0 2px 4px 4px rgba(0, 0, 0, .05);
+    z-index: 2;
+    background-color: white;
+    opacity: 0.3;
+    width: 300px;
 }
 
-#buttons {
-    margin-bottom: 16px;
-    display: flex;
+.toolbar:hover {
+    opacity: 1;
 }
 
 #cy {
@@ -40,4 +43,19 @@ body {
 
 canvas {
     left: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#upload-file,
+.group {
+    margin-bottom: 16px;
+}
+
+.layouts {
+    padding-left: 16px;
 }
