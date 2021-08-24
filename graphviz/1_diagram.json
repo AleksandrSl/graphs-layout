@@ -1,0 +1,322 @@
+{
+  "projectName": "3r234234234",
+  "nodes": [
+    {
+      "id": "-zI4uN-Seb7ekSI",
+      "typeId": "3b76",
+      "title": "AWS Lambda 2",
+      "x": -192,
+      "y": 96,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "5tkZGy_dTIZS8N8",
+      "typeId": "3mr6",
+      "title": "Amazon EC2",
+      "x": -448,
+      "y": 176,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "84KwgmwYcNBiUbN",
+      "typeId": "3b76",
+      "title": "AWS Lambda",
+      "x": -224,
+      "y": 64,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "8hyDjbc64pOIJxe",
+      "typeId": "4r3j",
+      "title": "User 1",
+      "x": 256,
+      "y": -112,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": null
+    },
+    {
+      "id": "GZrpyuS2ezpwRgg",
+      "typeId": "6qwx",
+      "title": "Desktop Client 1",
+      "x": 288,
+      "y": 144,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": null
+    },
+    {
+      "id": "K8-tzqRwQ5lCRpI",
+      "typeId": "5oy5",
+      "title": "AWS AppFlow",
+      "x": -240,
+      "y": -80,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "TPTMa3IRWIt-8nX",
+      "typeId": "75q9",
+      "title": "AWS Step Functions",
+      "x": -416,
+      "y": -128,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "UsltZmE2q1A_WGM",
+      "typeId": "38y5",
+      "title": "Amazon MQ",
+      "x": 16,
+      "y": -48,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "VYwfqQ6ZvnDg33E"
+    },
+    {
+      "id": "UuiUnfpxSC25shF",
+      "typeId": "6vdl",
+      "title": "Mobile Client",
+      "x": 272,
+      "y": 48,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": null
+    },
+    {
+      "id": "VxWc0y555TunliY",
+      "typeId": "3b76",
+      "title": "AWS Lambda 1",
+      "x": -400,
+      "y": 64,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "cHzFUCjxT17GT_R",
+      "typeId": "6qwx",
+      "title": "Desktop Client",
+      "x": 272,
+      "y": -48,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": null
+    },
+    {
+      "id": "l43nOw1UUvfUkL4",
+      "typeId": "3ubp",
+      "title": "AWS Batch 1",
+      "x": -224,
+      "y": 0,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "rZqPSeeV3QGIYR_",
+      "typeId": "3mr6",
+      "title": "Amazon EC2 1",
+      "x": -288,
+      "y": 176,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "sA8xT6oJ60H2tR3",
+      "typeId": "3ubp",
+      "title": "AWS Batch",
+      "x": -416,
+      "y": -16,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": "ftq-zhc8cuaiQ28"
+    },
+    {
+      "id": "x_aefNIrfwhkXKj",
+      "typeId": "4r3j",
+      "title": "User 2",
+      "x": 256,
+      "y": -240,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": null
+    },
+    {
+      "id": "zLHq_BAD0YqxXkf",
+      "typeId": "4r3j",
+      "title": "User",
+      "x": 272,
+      "y": -176,
+      "ignoreThreats": false,
+      "datatypeIds": [],
+      "parentGroup": null
+    }
+  ],
+  "groups": [
+    {
+      "id": "FKb4zVlSCvWsKWG",
+      "parentGroup": null,
+      "width": 672,
+      "height": 480,
+      "x": -480,
+      "y": -224,
+      "typeId": "general",
+      "title": "General",
+      "collapsed": false
+    },
+    {
+      "id": "ftq-zhc8cuaiQ28",
+      "parentGroup": "FKb4zVlSCvWsKWG",
+      "width": 432,
+      "height": 416,
+      "x": -464,
+      "y": -176,
+      "typeId": "privateSubnet",
+      "title": "Private Subnet",
+      "collapsed": false
+    },
+    {
+      "id": "VYwfqQ6ZvnDg33E",
+      "parentGroup": "FKb4zVlSCvWsKWG",
+      "width": 192,
+      "height": 128,
+      "x": -16,
+      "y": -112,
+      "typeId": "publicSubnet",
+      "title": "Public Subnet",
+      "collapsed": false
+    }
+  ],
+  "connections": [
+    {
+      "id": "1Bkb_JePnYDedWj",
+      "from": "UsltZmE2q1A_WGM",
+      "to": "zLHq_BAD0YqxXkf",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "6FsYvyltPlDkyOd",
+      "from": "UsltZmE2q1A_WGM",
+      "to": "x_aefNIrfwhkXKj",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "8vm1jamA3IgOhJa",
+      "from": "5tkZGy_dTIZS8N8",
+      "to": "sA8xT6oJ60H2tR3",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "FH3OqvQA2x8SbZ7",
+      "from": "K8-tzqRwQ5lCRpI",
+      "to": "VxWc0y555TunliY",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "K1mo1kQdft3_NF2",
+      "from": "UsltZmE2q1A_WGM",
+      "to": "8hyDjbc64pOIJxe",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "LT5Q6hl989t2R_t",
+      "from": "K8-tzqRwQ5lCRpI",
+      "to": "-zI4uN-Seb7ekSI",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "O9OIuvw4l_HnN5x",
+      "from": "K8-tzqRwQ5lCRpI",
+      "to": "84KwgmwYcNBiUbN",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "So_M8EFzbPBMWK3",
+      "from": "K8-tzqRwQ5lCRpI",
+      "to": "sA8xT6oJ60H2tR3",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "WopIVUSowbLd5Ak",
+      "from": "K8-tzqRwQ5lCRpI",
+      "to": "TPTMa3IRWIt-8nX",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "k5LE3et0sfLxPEH",
+      "from": "UsltZmE2q1A_WGM",
+      "to": "UuiUnfpxSC25shF",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "lg9II9AvnRoZkKQ",
+      "from": "TPTMa3IRWIt-8nX",
+      "to": "UsltZmE2q1A_WGM",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "mJwTfbVVmZnhcD6",
+      "from": "UsltZmE2q1A_WGM",
+      "to": "cHzFUCjxT17GT_R",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "o-XJb83w8p35Ut4",
+      "from": "K8-tzqRwQ5lCRpI",
+      "to": "l43nOw1UUvfUkL4",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "qWXOZLK3cd-FPwu",
+      "from": "UsltZmE2q1A_WGM",
+      "to": "GZrpyuS2ezpwRgg",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    },
+    {
+      "id": "rzgiwi71GbKBkcQ",
+      "from": "rZqPSeeV3QGIYR_",
+      "to": "sA8xT6oJ60H2tR3",
+      "type": "unidirectional",
+      "ignoreThreats": false,
+      "datatypeIds": []
+    }
+  ]
+}
